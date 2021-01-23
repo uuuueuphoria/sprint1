@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {App,showDescription,showMyPicture} from './App';
+import {App,ShowMyPicture} from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import datou from "./img/datou.jpeg";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,12 +14,10 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-  <showMyPicture url="img/Datou.jpeg"/>,
-  document.querySelector('.cat')
-)
-
-ReactDOM.render(
-  <showDescription text="This is my cat"/>,
+  <React.StrictMode>
+    <ShowMyPicture url={datou} alt="My cat" text="This is my cat!"/>
+  </React.StrictMode>
+  ,
   document.querySelector('.cat')
 )
 

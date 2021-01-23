@@ -2,13 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 .author {
   font-size: 20px;
   color: #ecb3b4;
+}
+.cat {
+  font-size: 2rem;
+  font-weight: 700;
+  color: goldenrod;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,9 +20,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding: 2rem;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
