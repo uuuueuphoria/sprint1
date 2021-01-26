@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.circle,
+.number {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.circle {
+  margin-bottom: 3rem;
+}
+button {
+  font-size: 1.5rem;
+  background-color: rgb(12, 134, 233);
+  color: white;
+  border: 2px solid rgb(12, 134, 233);
+  box-shadow: 0 0 0 3px rgb(12, 134, 233);
+  border-radius: 3px;
+}
+button:hover {
+  font-weight: bold;
+}
+input {
+  font-size: 1.5rem;
+  border-radius: 3px;
+}
+span {
+  color: red;
+}

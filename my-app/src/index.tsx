@@ -5,6 +5,8 @@ import {App,ShowMyPicture} from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import datou from "./img/datou.jpeg";
+import Circle from './circle';
+import Increment from './increment';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +22,24 @@ ReactDOM.render(
   ,
   document.querySelector('.cat')
 )
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Circle/>
+  </React.StrictMode>,
+document.querySelector('.circle')
+)
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Increment/>
+  </React.StrictMode>,
+document.querySelector('.number')
+)
+
+
+
+
 
 
 // If you want your app to work offline and load faster, you can change

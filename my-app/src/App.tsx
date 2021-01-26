@@ -1,4 +1,5 @@
 import React from 'react';
+import { Interface } from 'readline';
 //import logo from './logo.svg';
 import './App.css';
 // import { Interface } from 'readline';
@@ -18,7 +19,6 @@ function App() {
   );
 }
 
-
 interface photo{
   url:string,
   alt:string,
@@ -34,7 +34,6 @@ function ShowMyPicture(props:photo):any{
   </div>
   );
 }
-
 
 
 
