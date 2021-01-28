@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import datou from "./img/datou.jpeg";
 import Circle from './circle';
 import Increment from './increment';
+import TransitionsModal from './materialUI';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -36,6 +37,12 @@ ReactDOM.render(
   </React.StrictMode>,
 document.querySelector('.number')
 )
+
+ReactDOM.render(
+<TransitionsModal/>,
+document.querySelector('.pop')
+)
+
 
 
 

@@ -13,7 +13,8 @@ code {
 }
 
 .circle,
-.number {
+.number,
+.pop {
   display: block;
   margin: 1rem auto;
   text-align: center;
