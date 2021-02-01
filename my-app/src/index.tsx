@@ -6,7 +6,7 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import datou from "./img/datou.jpeg";
 import Circle from './circle';
-import Increment from './increment';
+import Increment from './increment.js';
 import TransitionsModal from './materialUI';
 
 ReactDOM.render(
@@ -15,6 +15,13 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Theme />
+//   </React.StrictMode>,
+//   document.querySelector('body')
+// );
 
 ReactDOM.render(
   <React.StrictMode>

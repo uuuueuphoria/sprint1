@@ -1,8 +1,11 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import { Interface } from 'readline';
-//import logo from './logo.svg';
 import './App.css';
-// import { Interface } from 'readline';
+import { ThemeProvider } from 'styled-components';
+import { useDarkMode } from './useDarkMode';
+import { lightTheme, darkTheme } from './theme.js';
+import { GlobalStyles } from './global.js';
+import Toggle from './Toggle.js';
 
 
 function DisplayAuthor(props:any):any{
@@ -10,7 +13,7 @@ function DisplayAuthor(props:any):any{
 }
 
 function App() {
-  return (
+  return (  
     <div className="App">
       <header className="App-header">
        <DisplayAuthor name="Wanlun"/>
@@ -23,7 +26,24 @@ interface photo{
   url:string,
   alt:string,
   text:string
-}
+}      
+
+// function Theme(){
+//   const [theme, toggleTheme] = useDarkMode();
+//   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  
+//   return (
+//     <ThemeProvider theme={lightTheme}>
+//       <>
+//         <GlobalStyles />
+//         <Toggle theme={theme} toggleTheme={toggleTheme} />
+//         <h1>It's a {theme === 'light' ? 'light theme' : 'dark theme'}!</h1>   
+//         <footer>
+//         </footer>
+//       </>
+//     </ThemeProvider>
+//   );
+// }
 
 
 function ShowMyPicture(props:photo):any{
